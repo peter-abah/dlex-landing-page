@@ -1,0 +1,318 @@
+@charset "UTF-8";
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+/* ENTIRE DOCUMENT */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+h1, h2, h3 {
+    font-weight: normal;
+}
+button:active {
+    border: none;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    font-size: 14px;
+    position: fixed;
+    padding: 0 10vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+nav .company-name {
+    font-size: 18px;
+    padding-right: 25px;
+    color: #464855;
+    font-weight: 500;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    padding: 0 20px;
+}
+nav a {
+    color: #6B6F81;
+    font-size: 12px;
+}
+
+/* SECTION #QLED-TV */
+#qled-tv {
+    margin: 5% auto auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+}
+#qled-tv .container {
+    display: grid;
+    margin: 20px;
+    width: 25vw;
+}
+#qled-tv h2 {
+    font-size: 25px;
+    color: #464855;
+}
+#qled-tv p {
+    font-size: 14px;
+    color: #6B6F81;
+}
+#starting-from {
+    color: #A7ABBD;
+}
+#tv-price {
+    font-size: 24px;
+    color: #666EE8;
+}
+#qled-tv button {
+    width: fit-content;
+    border: none;
+    color: white;
+    font-size: 16px;
+    background-color: #666EE8;
+    padding: 2.5% 15%;
+    letter-spacing: 2.5px;
+}
+#qled-tv img {
+    padding: 0 9%;
+    margin: auto;
+    width: 40vw;
+}
+
+/* SECTION #CATEGORIES */
+#categories {
+    background-color: #F4F5FA;
+    padding: 7.5%;
+    margin: auto;
+}
+#categories h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+}
+#categories .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: fit-content;
+    background-color: #fff;
+    margin: 5% auto;
+}
+#categories h3 {
+    color: #666EE8;
+    font-size: 15px;
+}
+#categories button {
+    display: block;
+    background-color: #666EE8;
+    color: #FFF;
+    border: none;
+    padding: 1% 2.5%;
+    font-family: inherit;
+    margin: auto;
+}
+.products {
+    min-width: 320px;
+    border: 0.5px solid #F4F5FA;
+    padding: 15px;
+    font-size: 11px;
+    display: grid;
+    grid-template-columns: 9fr 10fr;
+    grid-template-rows: 1fr;
+    color: #585B6E;
+}
+.products ul {
+    padding: 0;
+    list-style-image: url(images/list-icon.svg);
+    list-style-position: inside;
+    line-height: 2em;
+}
+.products img {
+    grid-row: 1 / 2;
+    margin: 5px;
+}
+.view {
+    text-align: right;
+    font-size: 11px;
+    margin: auto;
+}
+.view a {
+    color: #898EA2;
+}
+
+/* SECTION #BEAUTIFUL-TV */
+#beautiful-tv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 80vw;
+    margin: auto;
+    padding: 7.5% 0;
+}
+#beautiful-tv .container {
+    width: 27vw;
+    margin: 0 auto;
+}
+#beautiful-tv h2 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #464855;
+}
+#beautiful-tv p {
+    font-size: 13px;
+    color: #898EA2;
+    margin: 4em 0;
+}
+#beautiful-tv button {
+    width: 12em;
+    height: 3em;
+    font-size: 13px;
+    border: none;
+    border-radius: 40px;
+    background-color: #666EE8;
+    color: #FFF;
+}
+#beautiful-tv img {
+    width: 27vw;
+    margin: 0 auto;
+}
+#beautiful-tv a {
+    display: inline-block;
+    border-bottom: 1px solid #464855;
+    color: #464855;
+    font-size: 13px;
+    padding-bottom: .5em;
+    margin: 5% 5%;
+}
+
+/* SECTION #MOVIE-NIGHT */
+#movie-night {
+    width: 100vw;
+    background: linear-gradient(180deg, #2d2f4ed8, #2d2f4ed8), url(images/movie-night.png) ;
+    text-align: center;
+    color: #FFF;
+    padding: 25%;
+}
+#movie-night p {
+    font-size: 12.5px;
+    margin: 10% 0;
+    line-height: 2em;
+}
+#movie-night h2 {
+    font-size: 25px;
+    font-weight: 200;
+}
+#movie-night button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #FFF;
+    border: 1px solid #FFF;
+    height: 3em;
+    width: 13em;
+    border-radius: 40px;
+}
+
+/* FOOTER */
+footer {
+    width: 70vw;
+    margin: auto;
+    margin-top: 40px;
+    padding: 2.5% 0 1%;
+}
+footer ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 7em;
+    font-size: 12px;
+    line-height: 2em;
+    list-style-type: none;
+    margin: auto;
+}
+footer ul a {
+    color: #6B6F81;
+}
+footer p {
+    text-align: center;
+    margin-top: 40px;
+}
+footer .company-name {
+    font-size: 20px;
+    color: #6B6F81;
+}
+#copyright {
+    font-size: 12px;
+    color: #898EA2;
+}
+
+@media screen and (max-width: 720px) {
+    header {
+        display: none; /*TO BE REMOVED*/
+    }
+    nav {
+        margin: auto;
+    }
+    nav ul {
+        flex-direction: column;
+        align-content: center;
+    }
+    nav ul li {
+        margin: 7.5px auto;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    nav .company-name {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #qled-tv {
+        display: block;
+        text-align: center;
+    }
+    #qled-tv h2 {
+        text-align: center;
+    }
+    #qled-tv p {
+        font-size: 16px;
+    }
+    #qled-tv .container{
+        width: 70vw;
+        margin: auto;
+    }
+    #qled-tv button {
+        margin: auto;
+    }
+    #qled-tv img {
+        display: block;
+        width: 60vw;
+        margin: 10px auto 20px;
+    }
+
+    #categories .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
